@@ -8,33 +8,45 @@ import Resume from "./pages/Resume/Resume";
 import Blog from "./pages/Blog/Blog";
 import Porfolio from "./pages/Porfolio/Porfolio";
 
-const MainContainer = styled(Container)`
-  margin-top: 60px;
+const MainContainer = styled("div")`
+  width: 100%;
+  max-width: 1170px;
+  margin: 60px auto 20px;
+
+  @media (max-width: 992px) {
+    max-width: 750px;
+  }
+`;
+
+const GridItem = styled(Grid)`
+  width: 100%;
+  position: relative;
+  padding: 0 15px;
 `;
 
 const App = () => {
   return (
     <MainContainer>
-      <Grid container spacing={4}>
-        <Grid item xs={12} md={3}>
-          <Profile />
-        </Grid>
-        <Grid item xs={12} md={9}>
-          <Header />
-          <Paper>
-            <Container>
-              <BrowserRouter>
+      <BrowserRouter>
+        <Grid container>
+          <GridItem item xs={12} md1={4} lg={3}>
+            <Profile />
+          </GridItem>
+          <GridItem item xs={12} md1={8} lg={9}>
+            <Header />
+            <Paper>
+              <Container>
                 <Routes>
                   <Route path="/" element={<About />} />
                   <Route path="/resume" element={<Resume />} />
                   <Route path="/blog" element={<Blog />} />
                   <Route path="/porfolio" element={<Porfolio />} />
                 </Routes>
-              </BrowserRouter>
-            </Container>
-          </Paper>
+              </Container>
+            </Paper>
+          </GridItem>
         </Grid>
-      </Grid>
+      </BrowserRouter>
     </MainContainer>
   );
 };

@@ -90,7 +90,7 @@ const Timeline = () => {
       </TimelineItem>
       <TimelineItem>
         <p>
-          <span>Email:</span> chimebuka.dev@gmail.com
+          <span>Email:</span> echuqz@gmail.com
         </p>
       </TimelineItem>
       <TimelineItem>

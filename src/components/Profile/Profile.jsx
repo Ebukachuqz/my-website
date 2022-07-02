@@ -11,14 +11,13 @@ import GenericButton from "../GenericButton/GenericButton";
 import Timeline from "../Timeline/Timeline";
 import { FaDownload } from "react-icons/fa";
 
-const Container = styled(Box)`
+const ProfileContainer = styled("div")`
   width: 100%;
-  padding: 0 10px;
-`;
-const ProfileContainer = styled(Paper)`
-  width: 100%;
-  padding: 1px 0px;
   background-color: #fff;
+  box-shadow: 0px 2px 92px 0px rgb(0 0 0 / 7%);
+  padding-bottom: 1px;
+  border-radius: 6px;
+  margin-bottom: 30px;
 `;
 
 const ProfileName = styled(Typography)`
@@ -43,27 +42,25 @@ const ProfilePicture = styled(Box)`
 `;
 const Profile = () => {
   return (
-    <Container>
-      <ProfileContainer elevation={1}>
-        {/* Profile name */}
-        <Box sx={{ lineHeight: "18px", padding: "20px" }}>
-          <ProfileName>EBUKA CHUQZ</ProfileName>
-          <JobText>Fullstack Web Developer</JobText>
-        </Box>
-        {/* Profile Picture */}
-        <ProfilePicture>
-          <img src={ProfilePx} alt="Ebuka Chuqz" />
-        </ProfilePicture>
+    <ProfileContainer>
+      {/* Profile name */}
+      <Box sx={{ lineHeight: "18px", padding: "20px" }}>
+        <ProfileName>EBUKA CHUQZ</ProfileName>
+        <JobText>Fullstack Web Developer</JobText>
+      </Box>
+      {/* Profile Picture */}
+      <ProfilePicture>
+        <img src={ProfilePx} alt="Ebuka Chuqz" />
+      </ProfilePicture>
 
-        {/* Timeline */}
-        <Timeline />
+      {/* Timeline */}
+      <Timeline />
 
-        {/* Download Cv */}
-        <BtnContainer sx={{ margin: "20px auto 30px" }}>
-          <GenericButton text={"Download Cv"} icon={<FaDownload />} />
-        </BtnContainer>
-      </ProfileContainer>
-    </Container>
+      {/* Download Cv */}
+      <BtnContainer sx={{ margin: "20px auto 30px" }}>
+        <GenericButton text={"Download Cv"} icon={<FaDownload />} />
+      </BtnContainer>
+    </ProfileContainer>
   );
 };
 

@@ -11,26 +11,27 @@ const GenericBtn = styled("button")`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 350ms ease-in background;
 
   p {
     font-weight: bold;
     font-size: 14px;
-    margin-left: 15px;
+    margin-left: 10px;
   }
   &:hover {
-    background: black;
+    background: var(--primary-color-dark);
   }
 `;
 const Icon = styled("div")`
   color: #000;
   background: #fff;
   border-radius: 50px;
-  font-size: 11px;
-  height: 25px;
-  width: 25px;
-  margin-left: 25px;
-  text-align: center;
-  line-height: 29px;
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const GenericButton = ({ text, icon }) => {

@@ -7,6 +7,7 @@ import About from "./pages/About/About";
 import Resume from "./pages/Resume/Resume";
 import Blog from "./pages/Blog/Blog";
 import Porfolio from "./pages/Porfolio/Porfolio";
+import MenuList from "./components/Header/MenuList";
 
 const MainContainer = styled("div")`
   width: 100%;
@@ -34,6 +35,7 @@ const App = () => {
           </GridItem>
           <GridItem item xs={12} md1={8} lg={9}>
             <Header />
+            <MenuList />
             <Paper>
               <Container>
                 <Routes>

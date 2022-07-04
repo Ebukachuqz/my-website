@@ -22,15 +22,24 @@ const TwitterIcon = styled(FaTwitter)`
   &:hover {
     color: #1da1f2;
   }
+  @media (max-width: 992px) {
+    color: #1da1f2;
+  }
 `;
 const GithubIcon = styled(FaGithub)`
   &:hover {
+    color: #07851c;
+  }
+  @media (max-width: 992px) {
     color: #07851c;
   }
 `;
 
 const InstaIcon = styled(FaInstagram)`
   &:hover {
+    color: #e20f33;
+  }
+  @media (max-width: 992px) {
     color: #e20f33;
   }
 `;

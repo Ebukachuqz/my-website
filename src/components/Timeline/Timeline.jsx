@@ -38,11 +38,11 @@ const TimelineItem = styled("li")`
     border-left: solid 2px transparent;
     margin-top: -4.5px;
   }
-  &:first-child {
+  &:first-of-type {
     padding-bottom: 5px;
     position: relative;
   }
-  &:first-child::before {
+  &:first-of-type::before {
     content: "";
     margin-left: -40px;
     margin-top: -30px;
@@ -56,7 +56,7 @@ const TimelineItem = styled("li")`
     box-shadow: 0px 2px 32px 0px rgb(4 123 248 / 30%);
   }
 
-  &:first-child::after {
+  &:first-of-type::after {
     content: "";
     background: url(${Man}) no-repeat;
     width: 50px;

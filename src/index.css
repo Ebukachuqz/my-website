@@ -3,10 +3,12 @@
 :root {
   --primary-color: #ffc500;
   --primary-color-dark: #fdb000;
+  --border-radius: 6px;
+  --thin-grey-line: #e8e8e8;
 }
 
-.stay-black:hover {
-  color: black;
+.disappear {
+  display: block;
 }
 
 body {
@@ -21,4 +23,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Media queries */
+@media only screen and (max-width: 714px) {
+  .disappear {
+    display: none;
+  }
 }

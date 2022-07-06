@@ -5,6 +5,7 @@
   --primary-color-dark: #fdb000;
   --border-radius: 6px;
   --thin-grey-line: #e8e8e8;
+  --box-shadow: 0px 2px 92px 0px rgb(0 0 0 / 7%);
 }
 
 .disappear {

@@ -1,6 +1,5 @@
 import {
   Box,
-  Paper,
   styled,
   Typography,
   Container as BtnContainer,
@@ -14,7 +13,7 @@ import { FaDownload } from "react-icons/fa";
 const ProfileContainer = styled("div")`
   width: 100%;
   background-color: #fff;
-  box-shadow: 0px 2px 92px 0px rgb(0 0 0 / 7%);
+  box-shadow: var(--box-shadow);
   padding-bottom: 1px;
   border-radius: 6px;
   margin-bottom: 30px;

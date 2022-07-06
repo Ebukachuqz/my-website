@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, styled } from "@mui/material";
+import { styled } from "@mui/material";
 
 const GenericBtn = styled("button")`
   background: var(--primary-color);

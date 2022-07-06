@@ -16,6 +16,7 @@ const Container = styled("div")`
 const Menu = styled("div")`
   position: absolute;
   width: 100%;
+  box-shadow: 0px 2px 92px 0px rgb(0 0 0 / 25%);
   z-index: 4;
   background-color: white;
   margin-top: -5px;

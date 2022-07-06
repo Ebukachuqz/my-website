@@ -6,7 +6,7 @@ import GenericButton from "../GenericButton/GenericButton";
 // icons imports
 import { RiMenuFill } from "react-icons/ri";
 import { BsBriefcaseFill } from "react-icons/bs";
-import { FaHome, FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import SocialIcons from "../SocialIcons/SocialIcons";
 
 // routes import
@@ -21,7 +21,7 @@ const Nav = styled("nav")`
   height: 70px;
   background: #fff;
   overflow: hidden;
-  box-shadow: 0px 2px 92px 0px rgb(0 0 0 / 7%);
+  box-shadow: var(--box-shadow);
   border-radius: 6px;
   margin-bottom: 30px;
 `;

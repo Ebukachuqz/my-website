@@ -1,13 +1,15 @@
 import React from "react";
-import { Container, Grid, Paper, styled } from "@mui/material";
+import { Grid, styled } from "@mui/material";
 import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./pages/About/About";
+import Home from "./pages/Home/Home";
 import Resume from "./pages/Resume/Resume";
 import Blog from "./pages/Blog/Blog";
 import Porfolio from "./pages/Porfolio/Porfolio";
 import MenuList from "./components/Header/MenuList";
+import Contact from "./pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const MainContainer = styled("div")`
   width: 100%;
@@ -25,6 +27,17 @@ const GridItem = styled(Grid)`
   padding: 0 15px;
 `;
 
+const ContentContainer = styled("div")`
+  padding: 15px;
+  padding-bottom: 0;
+  overflow: hidden;
+  max-width: 100%;
+  min-height: 520px;
+  box-shadow: var(--box-shadow);
+  background-color: white;
+  border-radius: var(--border-radius);
+`;
+
 const App = () => {
   return (
     <MainContainer>
@@ -36,16 +49,17 @@ const App = () => {
           <GridItem item xs={12} md1={8} lg={9}>
             <Header />
             <MenuList />
-            <Paper>
-              <Container>
-                <Routes>
-                  <Route path="/" element={<About />} />
-                  <Route path="/resume" element={<Resume />} />
-                  <Route path="/blog" element={<Blog />} />
-                  <Route path="/porfolio" element={<Porfolio />} />
-                </Routes>
-              </Container>
-            </Paper>
+
+            <ContentContainer>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/resume" element={<Resume />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/porfolio" element={<Porfolio />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </ContentContainer>
+            <Footer />
           </GridItem>
         </Grid>
       </BrowserRouter>

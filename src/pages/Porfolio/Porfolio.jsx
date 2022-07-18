@@ -1,5 +1,4 @@
 import React from "react";
-import PortfolioCard from "../../components/PortfolioCard/PortfolioCard";
 
 const Porfolio = () => {
   return (

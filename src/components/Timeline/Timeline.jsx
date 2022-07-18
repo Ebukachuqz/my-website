@@ -80,7 +80,7 @@ const Timeline = () => {
       </TimelineItem>
       <TimelineItem>
         <p>
-          <span>Birthday:</span> 15 February
+          <span>Experience:</span> 1+ years
         </p>
       </TimelineItem>
       <TimelineItem>
@@ -90,7 +90,7 @@ const Timeline = () => {
       </TimelineItem>
       <TimelineItem>
         <p>
-          <span>Email:</span> echuqz@gmail.com
+          <span>Email:</span> chimebuka.dev@gmail.com
         </p>
       </TimelineItem>
       <TimelineItem>

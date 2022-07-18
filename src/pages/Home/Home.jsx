@@ -9,7 +9,7 @@ import { techStacks } from "../../data";
 const AboutSection = styled("div")`
   margin-right: -15px;
   margin-left: -15px;
-  padding: 40px 30px;
+  padding: 10px 30px;
   background: white;
 `;
 const AboutBody = styled("p")`
@@ -76,18 +76,20 @@ const Home = () => {
       <AboutSection>
         <Title text={"About Me"} />
         <AboutBody>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ut,
-          mollitia quia iure eligendi sapiente doloribus qui nobis, harum
-          impedit sequi amet nam pariatur delectus tempore commodi, blanditiis
-          optio porro? Totam sequi suscipit cum nihil debitis itaque. Dolore
+          Full Stack Web Developer with experience in building and deploying
+          scalable web apps. Skilled in solving problems with HTML, CSS,
+          Javascript, Bootstrap, React.Js, Material UI, Mongo DB and Node.Js. I
+          have a deep understanding of how to create responsive and
+          user-friendly web pages that are both visually appealing and easy to
+          use. I have gained good debugging skills and critical thinking while
+          working on projects individually or with a team, utilizing these
+          technologies.
           <br></br>
           <br></br>
-          incidunt cupiditate quia soluta. Nihil excepturi, explicabo distinctio
-          blanditiis a quidem id nam aliquid praesentium iste totam dolorum
-          veniam, esse commodi cumque. Doloribus nihil ipsam expedita delectus
-          deserunt veritatis, itaque esse ipsa sapiente qui, provident natus,
-          officiis aliquid optio ad ea laboriosam. Nihil deserunt vero quisquam
-          harum corporis recusandae! Porro, molestias suscipit. cumque!
+          In addition, I enjoy reading. Business, Psychology and self-help books
+          are my favorite. I love to apply my critical thinking, ideas, and
+          curiosity to help achieve goals and solve technical problems in
+          projects, teams, and companies I work for.
         </AboutBody>
       </AboutSection>
       {/* Tech Stacks */}

@@ -29,7 +29,6 @@ const GridItem = styled(Grid)`
 
 const ContentContainer = styled("div")`
   padding: 15px;
-  padding-bottom: 0;
   overflow: hidden;
   max-width: 100%;
   min-height: 520px;

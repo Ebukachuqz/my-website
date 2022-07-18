@@ -45,7 +45,7 @@ const Profile = () => {
       {/* Profile name */}
       <Box sx={{ lineHeight: "18px", padding: "20px" }}>
         <ProfileName>EBUKA CHUQZ</ProfileName>
-        <JobText>Fullstack Web Developer</JobText>
+        <JobText>Fullstack Developer</JobText>
       </Box>
       {/* Profile Picture */}
       <ProfilePicture>

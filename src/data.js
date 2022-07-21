@@ -19,8 +19,8 @@ export const routes = [
   },
   {
     id: 2,
-    name: "porfolio",
-    link: "/porfolio",
+    name: "portfolio",
+    link: "/portfolio",
   },
   {
     id: 3,
@@ -89,5 +89,28 @@ export const techStacks = [
     id: 11,
     image: bootstrap,
     name: "Bootstrap",
+  },
+];
+
+export const projectSort = [
+  {
+    id: 1,
+    name: "all",
+  },
+  {
+    id: 2,
+    name: "react",
+  },
+  {
+    id: 3,
+    name: "node js",
+  },
+  {
+    id: 4,
+    name: "Python",
+  },
+  {
+    id: 5,
+    name: "Fullstack",
   },
 ];

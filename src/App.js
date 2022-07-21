@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Resume from "./pages/Resume/Resume";
 import Blog from "./pages/Blog/Blog";
-import Porfolio from "./pages/Porfolio/Porfolio";
+import Portfolio from "./pages/Portfolio/Portfolio";
 import MenuList from "./components/Header/MenuList";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -54,7 +54,7 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/resume" element={<Resume />} />
                 <Route path="/blog" element={<Blog />} />
-                <Route path="/porfolio" element={<Porfolio />} />
+                <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/contact" element={<Contact />} />
               </Routes>
             </ContentContainer>

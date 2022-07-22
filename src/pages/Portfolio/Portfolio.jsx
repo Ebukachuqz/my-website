@@ -1,6 +1,6 @@
-import { Grid, styled } from "@mui/material";
+import { styled } from "@mui/material";
 import React from "react";
-import PortfolioCard from "../../components/PortfolioCard/PortfolioCard";
+import PortfolioCard from "../../components/Cards/PortfolioCard";
 import Title from "../../components/Others/Title";
 import { projectSort } from "../../data";
 
@@ -13,8 +13,18 @@ const Container = styled("div")`
   background: white;
 `;
 
-const GridContainer = styled(Grid)`
-  padding: 20px 5px;
+const Projects = styled("div")`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 10px;
+  gap: 30px;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
 `;
 
 const Sort = styled("div")`
@@ -36,13 +46,13 @@ const Portfolio = () => {
           return <div key={project.id}>{project.name}</div>;
         })}
       </Sort>
-      <GridContainer container spacing={3}>
+      <Projects>
         {projects.map((p) => (
-          <Grid key={p} item>
+          <div key={p}>
             <PortfolioCard />
-          </Grid>
+          </div>
         ))}
-      </GridContainer>
+      </Projects>
     </Container>
   );
 };

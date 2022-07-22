@@ -38,7 +38,7 @@ const PortfolioCard = () => {
         <CardMedia
           component="img"
           height="150"
-          image="https://cdn-media-1.freecodecamp.org/images/g-kAkNulNHQGkMd9vst3XuTG5kvoJJ2IfVff"
+          image="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"
           alt="green iguana"
         />
         <CardContent>

@@ -1,7 +1,7 @@
 import { Grid, styled } from "@mui/material";
 import React from "react";
 import PortfolioCard from "../../components/PortfolioCard/PortfolioCard";
-import Title from "../../components/Title";
+import Title from "../../components/Others/Title";
 import { projectSort } from "../../data";
 
 const projects = [1, 2, 3, 4, 5];

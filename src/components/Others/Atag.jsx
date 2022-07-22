@@ -1,9 +1,9 @@
 import React from "react";
 
-const Atag = ({ text, href }) => {
+const Atag = ({ text, href, color }) => {
   return (
     <a
-      style={{ textDecoration: "none" }}
+      style={{ textDecoration: "none", color: color }}
       target="_blank"
       rel="noreferrer"
       href={href}

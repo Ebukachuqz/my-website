@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "@mui/material";
-import Title from "../../components/Title";
+import Title from "../../components/Others/Title";
 
 // Stacks import
 import { techStacks } from "../../data";
@@ -16,6 +16,7 @@ const AboutBody = styled("p")`
   font-size: 14px;
   color: #4c4c4c;
   line-height: 28px;
+  margin-top: -10px;
 `;
 
 const TechStacksSection = styled("div")`

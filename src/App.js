@@ -4,7 +4,6 @@ import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Resume from "./pages/Resume/Resume";
 import Blog from "./pages/Blog/Blog";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import MenuList from "./components/Header/MenuList";
@@ -52,7 +51,6 @@ const App = () => {
             <ContentContainer>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/resume" element={<Resume />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/contact" element={<Contact />} />

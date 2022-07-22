@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions, styled } from "@mui/material";
-import Atag from "../Atag";
+import Atag from "../Others/Atag";
 
 const CardActionAreaContainer = styled(CardActionArea)`
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -56,11 +56,11 @@ const PortfolioCard = () => {
         </CardContent>
       </CardActionAreaContainer>
       <CardActionsContainer>
-        <Button size="medium" color="primary">
-          <Atag text={"Github"} href={"#"} />
+        <Button size="medium">
+          <Atag text={"Github"} href={"#"} color="green" />
         </Button>
-        <Button size="medium" color="primary">
-          <Atag text={"Live"} href={"#"} />
+        <Button size="medium">
+          <Atag text={"Live"} href={"#"} color="purple" />
         </Button>
       </CardActionsContainer>
     </Card>

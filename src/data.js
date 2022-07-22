@@ -14,21 +14,16 @@ import flask from "./assets/images/logos/flask.png";
 export const routes = [
   {
     id: 1,
-    name: "resume",
-    link: "/resume",
-  },
-  {
-    id: 2,
     name: "portfolio",
     link: "/portfolio",
   },
   {
-    id: 3,
+    id: 2,
     name: "blog",
     link: "/blog",
   },
   {
-    id: 4,
+    id: 3,
     name: "contact",
     link: "/contact",
   },

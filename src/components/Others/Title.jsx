@@ -5,6 +5,7 @@ const Container = styled("div")`
   padding: 0 3px;
   position: relative;
   display: inline-block;
+  margin-bottom: 20px;
   h2 {
     font-size: 18px;
     font-weight: 600;
